@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xchange</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body{
+            background-color: antiquewhite;
+        }
+
+
+
+        .nav-link {
+            margin: 0 70px;
+            
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            align-items: center;
+    
+        }
+
+
+        button {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        .exchange{
+            text-align: center;
+        }
+  
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">XCHANGE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exchange.html">Exchange</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="rate.html">Rates</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="transfer.html">Transfer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <br>
+    <div class="exchange">
+        <h2>EXCHANGE:</h2>
+        <br><br>
+        <form action="payment.html">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+            <label for="contact">Contact:</label> 
+            <input type="contact" id="contact" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br><br>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+            <br><br>
+            <label for="amount">Currency:</label>
+
+            <div class="currency">
+                <select class="dropdown-select">
+                    <option value="3.366">MYR </option>
+                    <option value="0.749">USD</option>
+                    <option value="1.258">NZD</option>
+                </select>
+
+            </div>
+            <br><br>
+            <button type="submit">EXCHANGE</button>
+
+            
+        </form>
+        <br><br>
+
+
+    </div>
+</body>
